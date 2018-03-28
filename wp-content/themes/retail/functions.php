@@ -120,9 +120,14 @@ add_action( 'widgets_init', 'retail_widgets_init' );
  * Enqueue scripts and styles.
  */
 function retail_scripts() {
+
 	wp_enqueue_style( 'retail-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'retail-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'retail-navigation', get_template_directory_uri() . '/js/bootstrapmin.min.js', array(), '20151215', true );
+
+	wp_enqueue_script( 'retail-navigation', get_template_directory_uri() . '/js/jquery.meanmenu.js', array(), '20151215', true );
+
+	//wp_enqueue_script( 'retail-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'retail-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 

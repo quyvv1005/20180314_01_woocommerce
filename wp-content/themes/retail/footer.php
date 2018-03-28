@@ -32,5 +32,11 @@
 
 <?php wp_footer(); ?>
 
+<script>
+	jQuery(document).ready(function () {
+	    jQuery('header nav#site-navigation').meanmenu();
+	});
+</script>
+
 </body>
 </html>
